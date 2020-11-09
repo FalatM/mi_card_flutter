@@ -14,35 +14,59 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Container(
                 width: 100,
                 height: 100,
-                color: Colors.white,
+                color: Colors.red,
                 child: Text('Container 1'),
 
               ),
               Container(
-                width: 100.0,
-                height: 100.0,
-                color: Colors.blue,
-                child: Text('Container 2'),
-
+                width: 37,
               ),
-              Container(
-                width: 100.0,
-                height: 100.0,
-                color: Colors.red,
-                child: Text('Container 3'),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.yellow,
+                    child: Text('Container 2'),
 
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.green,
+                    child: Text('Container 3'),
+
+                  ),
+                ],
               ),
-              Container(
-                width: 100.0,
-                height: 100.0,
-                color: Colors.yellow,
-                child: Text('Container 4'),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Container(
+                    width: 37,
+                  ),
+                ],
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    width: 100.0,
+                    color: Colors.blue,
+                    child: Text('Container 4'),
 
+                  ),
+                ],
               ),
             ],
           ),
