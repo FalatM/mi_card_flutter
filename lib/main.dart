@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueGrey[800],
         body: SafeArea(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               Container(
                 width: 100,
                 height: 100,
-                color: Colors.red,
+                color: Colors.deepOrange[700],
                 child: Text('Container 1'),
 
               ),
@@ -35,14 +35,14 @@ class MyApp extends StatelessWidget {
                   Container(
                     width: 100.0,
                     height: 100.0,
-                    color: Colors.yellow,
+                    color: Colors.yellow[700],
                     child: Text('Container 2'),
 
                   ),
                   Container(
                     width: 100.0,
                     height: 100.0,
-                    color: Colors.green,
+                    color: Colors.green[800],
                     child: Text('Container 3'),
 
                   ),
@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
                 children: [
                   Container(
                     width: 100.0,
-                    color: Colors.blue,
+                    color: Colors.blue[800],
                     child: Text('Container 4'),
 
                   ),
