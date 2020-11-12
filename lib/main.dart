@@ -39,54 +39,44 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget> [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.pink.shade100,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('804 548 xxxx',
-                    style: TextStyle(
-                      color: Colors.teal[900],
-                      fontFamily: 'SourceSansPro',
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold
-                    ),
-                    ),
-                  ],
+              SizedBox(height: 20.0,
+                width: 180.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget> [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.pink.shade100,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.pink.shade100
+                  ),
+                  title: Text('804 548 xxxx',
+                    style: TextStyle(
+                        color: Colors.teal[900],
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold
                     ),
-                    SizedBox(
-                      width: 10.0,
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.pink.shade100,
+                  ),
+                  title: Text('MelissaFalat@Email.com',
+                    style: TextStyle(
+                        color: Colors.teal[900],
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold
                     ),
-                    Text('MelissaFalat@Email.com',
-                      style: TextStyle(
-                          color: Colors.teal[900],
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
